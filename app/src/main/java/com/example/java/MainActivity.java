@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
      This method is called when the order is clicked.
      */
     public void submitOrder(View view) {
-        display(1);
+        display(16 - 10);
     }
     /**
 
      This method displays the given quantity value on screen.
      */
     private void display(int number) {
-        TextView quantityTextView = findViewById(R.id.quantity_text_view);
+        TextView quantityTextView = findViewById(R.id.zero_text_view);
         quantityTextView.setText("" + number);
     }
 }
