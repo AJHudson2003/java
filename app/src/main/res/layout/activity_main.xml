@@ -13,10 +13,13 @@
         android:text="quantity"
         />
 
+
     <TextView
         android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPanel"
+        android:layout_marginTop="0dp"
         android:paddingTop="16dp"
         android:text="0" />
 
@@ -25,7 +28,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/price"
         android:text="price"
-        android:layout_below="@+id/quantity_text_view"
+        android:layout_below="@+id/buttonPanels"
         />
 
 
@@ -35,18 +38,36 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:paddingTop="16dp"
-        android:layout_below="@+id/quantity_text_view"/>
-
+        android:layout_below="@+id/price"/>
 
     <Button
-        android:id="@+id/button_id"
+        android:id="@+id/buttonPanel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order"
+        android:layout_below="@+id/quantity"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="16dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonPanels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
         android:paddingTop="16dp"
-        android:layout_below="@+id/zero_text_view"
-        android:onClick="submitOrder"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/quantity_text_view"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="16dp"
+        android:text="Order"
+        android:onClick="submitOrder"
+        android:layout_below="@+id/zero_text_view"/>
+
 
 
 </RelativeLayout>

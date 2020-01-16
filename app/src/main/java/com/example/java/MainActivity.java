@@ -28,7 +28,7 @@ This method is called when the order is clicked.
 public void submitOrder(View view) {
 
 numofcoffes++;
-display(numofcoffes);
+ display(numofcoffes);
 displayPrice(numofcoffes * 5);
 }
 /**
