@@ -47,4 +47,13 @@ private void displayPrice(int number) {
 TextView priceTextView = findViewById(R.id.zero_text_view);
 priceTextView.setText(NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(number));
 }
+public void decrement (View view){
+ numofcoffes--;
+ display(numofcoffes);
+}
+
+ public void increment (View view){
+  numofcoffes++;
+  display(numofcoffes);
+ }
 }
