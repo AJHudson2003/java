@@ -27,7 +27,6 @@ This method is called when the order is clicked.
 */
 public void submitOrder(View view) {
 
-numofcoffes++;
  display(numofcoffes);
 displayPrice(numofcoffes * 5);
 }
@@ -44,7 +43,7 @@ quantityTextView.setText("" + number);
 This method displays the given price on the screen.
 */
 private void displayPrice(int number) {
-TextView priceTextView = findViewById(R.id.zero_text_view);
+TextView priceTextView = findViewById(R.id.price_text_view);
 priceTextView.setText(NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(number));
 }
 public void decrement (View view){
@@ -55,5 +54,12 @@ public void decrement (View view){
  public void increment (View view){
   numofcoffes++;
   display(numofcoffes);
+ }
+ /**
+  * This method displays the given text on the screen.
+  */
+ private void displayMessage(String message) {
+  TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+  priceTextView.setText(message);
  }
 }
